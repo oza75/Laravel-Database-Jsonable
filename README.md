@@ -34,7 +34,7 @@ For example, if you have a posts table, which has a field of action where
  ### Api
  
  - Now your `actions` field will be a Jsonable class that contains lots of methods that you can use to
-  add, edit, remove items in your field
+  add, edit, remove items in your field 
   ```php
   $post = Posts::first();
   $id = $post->actions->add(['type' => 'like', 'count' => 1234])
