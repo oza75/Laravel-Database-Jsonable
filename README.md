@@ -1,7 +1,8 @@
-### Laravel package to fill certain fields in JSON format
-this package allows you to fill some fields of your model in json format. 
-For example, if you have an avatars table, you can easily save 
-and retrieve the thumbnails of your avatars with this package
+### Laravel package to fill and retrieve your database fields in JSON formats
+this package allows you to fill some fields of your model in json format.
+For example, if you have a posts table, which has a field of action where
+ you can put the actions as the number of comments likes etc ... 
+ you can easily do it with this package
 
 ### Installation 
 ```
@@ -30,7 +31,7 @@ and retrieve the thumbnails of your avatars with this package
      protected $guarded = [];
  }
  ```
- ###Api
+ ### Api
  
  - Now your `actions` field will be a Jsonable class that contains lots of methods that you can use to
   add, edit, remove items in your field
