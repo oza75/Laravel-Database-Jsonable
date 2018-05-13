@@ -1,0 +1,16 @@
+{
+    "name": "oza/laravel-database-jsonable",
+    "description": "A Laravel Packages to fill database fill with json",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^7.2@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aboubacar Ouattara",
+            "email": "abouba181@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
