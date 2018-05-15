@@ -45,12 +45,12 @@ For example, if you have a posts table, which has a field of action where
  Posts::create(['content' => 'blablab', 'actions' => ['type' => 'like', 'count' => 0] ]) 
  // output an instance of App\Posts
  ```
-  If you do this, all the fields contained in the jsonable property of your model will be directly encoded in json and save
+  If you do this, all the fields contained in the jsonable property of your model will be directly encoded in json and saved
  - #### Define Schema for jsonable field
- Always typing the board to be transmitted can be a bit tiring.
+ Always typing an array to be transmitted can be a bit tiring.
  To allow you to save your energy and continue coding
- pretty application Laravel, the jsonable fields  can take a schema to follow.
- To add just modify your jsonable property like that:
+ pretty Laravel application, the jsonable fields  can take a schema to follow.
+ To add it,  just modify your jsonable property like that:
  ```php
  <?php
 
