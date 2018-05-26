@@ -3,7 +3,7 @@
     "description": "Laravel package to fill and retrieve your database fields in JSON formats",
     "type": "library",
     "require": {
-        "phpunit/phpunit": "^7.2@dev"
+        "laravel/laravel": "5.*"
     },
     "license": "MIT",
     "authors": [
