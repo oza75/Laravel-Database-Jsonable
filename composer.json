@@ -2,10 +2,10 @@
     "name": "oza/laravel-database-jsonable",
     "description": "Laravel package to fill and retrieve your database fields in JSON formats",
     "type": "library",
-    "require": {
-        "laravel/laravel": "5.*"
-    },
     "license": "MIT",
+    "require-dev": {
+	"laravel/laravel": "5.*"
+	},
     "authors": [
         {
             "name": "Aboubacar Ouattara",
