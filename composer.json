@@ -3,6 +3,16 @@
     "description": "Laravel package to fill and retrieve your database fields in JSON formats",
     "type": "library",
     "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Oza\\DatabaseJsonable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
     "authors": [
         {
             "name": "Aboubacar Ouattara",
