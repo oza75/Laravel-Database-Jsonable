@@ -3,9 +3,6 @@
     "description": "Laravel package to fill and retrieve your database fields in JSON formats",
     "type": "library",
     "license": "MIT",
-    "require-dev": {
-	"laravel/laravel": "5.*"
-	},
     "authors": [
         {
             "name": "Aboubacar Ouattara",
