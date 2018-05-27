@@ -19,7 +19,7 @@ trait DatabaseJsonable
     {
         $data = parent::__get($name);
         if ($this->hasJsonableKey($name))
-            $data = new Jsonable($data, $name, $this, $this->getSchema($name), $this->jsonableTimestamps ?? false);
+            $data = new Jsonable($data, $name, $this, $this->getSchema($name), $this->jsonableTimestamps ?? false, $this->identifiable ?? false);
         return $data;
     }
 
