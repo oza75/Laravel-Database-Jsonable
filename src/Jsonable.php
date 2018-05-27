@@ -28,7 +28,9 @@ class Jsonable
      * @var bool
      */
     private $timestamps;
-
+	
+    private $id;			
+    
     /**
      * Jsonable constructor.
      *
@@ -42,13 +44,14 @@ class Jsonable
      *
      * @license MIT
      */
-    public function __construct($data, string $field, Model $model, ?array $schema = null, bool $timestamps = false)
+    public function __construct($data, string $field, Model $model, ?array $schema = null, bool $timestamps = false, bool $id = true)
     {
         $this->items = $this->bootData($data);
         $this->field = $field;
         $this->model = $model;
         $this->schema = $schema;
         $this->timestamps = $timestamps;
+	$this->id = $id;
     }
 
 
@@ -72,7 +75,7 @@ class Jsonable
     public function add(...$args)
     {
         $newItem = $this->getNewItem($args);
-        $newItem['id'] = $this->getId();
+        if($this->id) $newItem['id'] = $this->getId();
         $this->items->push($newItem);
         $this->save();
         return $newItem['id'];
